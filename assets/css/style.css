@@ -55,9 +55,7 @@ main {
 }
 
 .btn {
-    background-color: var(--darkblue);
-    cursor: pointer;
-    color: var(--white);
+    cursor: pointer;    
     float: right;
     margin: 10px;
 }

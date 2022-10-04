@@ -67,3 +67,11 @@ main {
     margin: 10px;
     height: 150px;
 }
+
+.list-group-item {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--gray);
+    color: var(--white)
+}

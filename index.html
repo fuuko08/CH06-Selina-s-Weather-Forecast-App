@@ -19,24 +19,21 @@
             <div class="card" id="form">
                 <h3 class="card-header text-uppercase">Search for a City</h3>
                 <form id="user-form" class="user-form">
-                  <input name="City" id="City" type="text" placeholder="Enter City Name" class="form-input" />
+                  <input name="city" id="city" type="text" placeholder="Enter City Name" class="form-input" />
                   <br>
-                  <button type="submit" class="btn btn-primary" id="btn">Search</button>
+                  <button class="btn btn-primary" id="btn">Search</button>
                 </form>
             </div>
-        
-            <div class="card-list" id="card-list">
-                <ul class="list-group city-list">
-                </ul>
-            </div>
+                <li class="list-group col col-12 px-3" id="cityListLi">
+                </li>            
         </div>
 
         <div class="col-md-9">
-            <div class="card" id="city-info">
-                <img class class="card-header">
+            <div class="card" id="city-info">       
+                <h3 class="card-header">
 					<span id="cityname"></span> 
 					(<span id="moment"></span>) 
-					<img class="weather-icon" id="weather-icon" src=""></img>
+					<img class="weather-icon" id="weather-icon" src=""> </img>
 				</h3> 
                 <p class="card-text" id="temperature"></p>
                 <p class="card-text" id="humidity"></p>
@@ -104,6 +101,9 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js">       
+    </script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

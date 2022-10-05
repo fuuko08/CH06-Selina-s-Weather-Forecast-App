@@ -1,8 +1,6 @@
 var today = moment();
 $("#moment").text(today.format("MMM Do, YYYY"));
 
-var cityListArr = [];
-var numberOfCity = 9;
 var dailyWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
 var dailyForecastUrl = "https://api.openweathermap.org/data/2.5/onecall?";
 

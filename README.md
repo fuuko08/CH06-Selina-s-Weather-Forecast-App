@@ -1,4 +1,4 @@
-# CH06-Selina-s-Weather-Forecast-App
+# CH06-Selina-Weather-Forecast-App
 
 ## User Story
 ```

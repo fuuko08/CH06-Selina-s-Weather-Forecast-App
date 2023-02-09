@@ -10,29 +10,33 @@
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 
-<body class="flex-column col-md-12">
-    <header class="text-center text-white">
+<body>
+    <header class="container-fluid text-center bg-info text-white p-2">
         <h1 class="app-title">Weather Dashboard</h1>
     </header>
 
-    <main class="flex-row justify-space-between">
-        <div class="col-md-3">
-            <div class="card" id="form">
-                <h3 class="card-header text-uppercase">Search for a City</h3>
-                <form id="user-form" class="user-form">
-                  <input name="city" id="searchCity" type="text" placeholder="Enter City Name" class="form-input" />
-                  <br>
-                  <button class="btn btn-primary" id="searchBtn">Search</button>
-                  <button class="btn btn-secondary" id="clearBtn">Clear</button>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3" id="form">
+                <h3 class="mt-1">Search for a City</h3>
+                <form class="input-group mb-3">
+                  <input name="city" id="searchCity" type="text" placeholder="Enter City Name" class="form-control" />
+                  <div class="input-group-append">
+                    <button class="btn btn-info" id="searchBtn">Search</button>                
+                  </div>
                 </form>
-            </div>
-                <ul class="list-group searchHistory col col-12 px-3" id="searchHistory">
-                </ul>            
-        </div>
+                <button class="btn btn-dark mb-2" id="clearBtn">Clear</button>       
+                <div class="d-block mt-0">
+                    <ul class="form-check-label d-block mb-2" id="searchHistory"></ul>
+                </div>  
+            </div>                  
+      
 
-        <div class="col-md-9">
-            <div class="card" id="city-info">       
-                <h3 class="card-header">
+        <div class="col-lg-9">
+            <div class="row mr-0">   
+                <div class="col-lg-11 card m-3" id="city-info"> 
+                    <div class="card-body"> 
+                <h3>
 					<span id="cityname"></span> 
 					(<span id="moment"></span>) 
 					<img class="weather-icon" id="weather-icon" src=""> </img>
@@ -40,55 +44,48 @@
                 <p class="card-text" id="temperature">Temperature: </p>
                 <p class="card-text" id="humidity">Humidity: </p>
                 <p class="card-text" id="windspeed">Windspeed: </p>
+               </div> 
+            </div>
+            
             </div>
 
-            
-            <h4 class="card-header d-flex align-items-center font-weight-bold mt-3" >5-Day Forecast:</h4>
-            <div class="card px-3 row justify-content-between" id="forecast"> 
-				
-				<div class="card-body col-sm-2 bg-primary text-white rounded mb-3">    
-					<p class="card-title font-weight-bold" id="date1"></p>
-					<p class="card-text" style="height: 75px">
-						<img class="weather-icon" id="iconday1" src=""></img>
-					</p>
-					<p class="card-text"> Temp: <span id="temp1"></span></p> 
-					<p class="card-text">Humidity: <span id="humidity1"></span></p>          
+            <div class="col-12">
+                <h4>5-Day Forecast:</h4>
+            </div>
+            <div class="row" id="forecast"> 				
+				<div class="col-md-2 bg-info text-white rounded m-2">    
+					<p class="card-title mt-3 mb-0" id="date1"></p>					
+					<img class="weather-icon" id="iconday1" src=""></img>					
+					<p> Temp: <span id="temp1"></span></p> 
+					<p> Humidity: <span id="humidity1"></span></p>          
                 </div>
 
-				<div class="card-body col-sm-2 bg-primary text-white rounded mb-3">    
-					<p class="card-title font-weight-bold" id="date2"></p>
-					<p class="card-text" style="height: 75px">
-						<img class="weather-icon" id="iconday2" src=""></img>
-					</p>
-					<p class="card-text"> Temp: <span id="temp2"></span></p> 
-					<p class="card-text">Humidity: <span id="humidity2"></span></p>          
+				<div class="col-md-2 bg-info text-white rounded m-2">    
+					<p id="date2"></p>				
+				    <img class="weather-icon" id="iconday2" src=""></img>				
+					<p> Temp: <span id="temp2"></span></p> 
+					<p>Humidity: <span id="humidity2"></span></p>          
                 </div>
 
-				<div class="card-body col-sm-2 bg-primary text-white rounded mb-3">    
-					<p class="card-title font-weight-bold" id="date3"></p>
-					<p class="card-text" style="height: 75px">
-						<img class="weather-icon" id="iconday3" src=""></img>
-					</p>
-					<p class="card-text"> Temp: <span id="temp3"></span></p> 
-					<p class="card-text">Humidity: <span id="humidity3"></span></p>          
+				<div class="col-md-2 bg-info text-white rounded m-2">    
+					<p id="date3"></p>					
+					<img class="weather-icon" id="iconday3" src=""></img>				
+					<p> Temp: <span id="temp3"></span></p> 
+					<p>Humidity: <span id="humidity3"></span></p>          
                 </div>
 
-				<div class="card-body col-sm-2 bg-primary text-white rounded mb-3">    
-					<p class="card-title font-weight-bold" id="date4"></p>
-					<p class="card-text" style="height: 75px">
-						<img class="weather-icon" id="iconday4" src=""></img>
-					</p>
-					<p class="card-text"> Temp: <span id="temp4"></span></p> 
-					<p class="card-text">Humidity: <span id="humidity4"></span></p>          
+				<div class="col-md-2 bg-info text-white rounded m-2">    
+					<p id="date4"></p>					
+					<img class="weather-icon" id="iconday4" src=""></img>				
+					<p> Temp: <span id="temp4"></span></p> 
+					<p>Humidity: <span id="humidity4"></span></p>          
                 </div>
 
-				<div class="card-body col-sm-2 bg-primary text-white rounded mb-3">    
-					<p class="card-title font-weight-bold" id="date5"></p>
-					<p class="card-text" style="height: 75px">
-						<img class="weather-icon" id="iconday5" src=""></img>
-					</p>
-					<p class="card-text"> Temp: <span id="temp5"></span></p> 
-					<p class="card-text">Humidity: <span id="humidity5"></span></p>          
+				<div class="col-md-2 bg-info text-white rounded m-2">    
+					<p id="date5"></p>		
+					<img class="weather-icon" id="iconday5" src=""></img>					
+					<p> Temp: <span id="temp5"></span></p> 
+					<p>Humidity: <span id="humidity5"></span></p>          
                 </div>
             </div>
         </div> 

@@ -1,84 +1,8 @@
-:root {
-    --darkblue: #023e8a;
-    --lightblue: #48cae4;
-    --textblue: #1d3557;
-    --gray: #8e9aaf; 
-    --white: #ffffff;  
-}
-
 * {
     box-sizing: border-box;
 }
 
-header {
-    background-color: var(--darkblue);
-    height: 60px;
-    width: 100%;
-    text-align: center;
-    color: var(--white);
+body {
+    background-image: url("weather.png");
+    background-size: cover;
 }
-
-main {
-    display: flex;
-    flex-direction: row;
-}
-
-.card, .card-body {
-    margin: 20px 0; 
-    color: var(--textblue);
-}
-.card-group {
-    display: flex;
-    flex-direction: row;
-}
-
-#city-info{
-    height: 250px;
-   
-}
-
-#forecast{
-    height: 300px;
-    
-}
-
-.card-header {
-    color: var(--textblue);
-    background-color: var(--lightblue);
-}
-.card-list li {
-    border: solid 1px black;
-    justify-content: space-between;
-    margin: 5px;
-    background-color: var(--gray);
-    color: var(--white);
-    height: 50px;
-}
-
-.btn {
-    cursor: pointer;    
-    float: right;
-    margin: 10px;
-}
-
-
-.card-body {
-    background-color: var(--textblue);
-    color: var(--white);
-    border: solid 1px black;
-    margin: 10px;
-    height: 150px;
-}
-
-.list-group-item {
-    cursor: pointer;
-    padding: 10px;
-    margin: 5px;
-    background-color: var(--gray);
-    color: var(--white)
-}
-
-#clearBtn {
-    border: 1px black solid;
-}
-

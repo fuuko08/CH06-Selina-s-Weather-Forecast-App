@@ -1,4 +1,4 @@
-# CH06-Selina-Weather-Forecast-App
+# Weather-Forecast-App
 
 ## Description
 

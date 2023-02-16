@@ -2,16 +2,18 @@
 
 ## Description
 
-I created an web app to track 5 days weather forecast. When users enter a city name, the app presents with that city's today and next 5 days weather forecast with temparature, humidity, windspeed, and a tiny icon of the weather condition. Users can also save the searched history, and click on it to reload the searched cities for later use
+A web app to track 5 days weather forecast. When users enter a city name, the app presents with that city's today and next 5 days weather forecast with temparature, humidity, windspeed, and a tiny icon of the weather condition. Users can also save the searched history, and click on it to reload the searched cities for later use
 
-## User Story
+Deployed Link: https://fuuko08.github.io/CH06-Selina-Weather-Forecast-App/
+
+### User Story
 ```
 AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 
-## Acceptance Criteria
+### Acceptance Criteria
 ```
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
@@ -28,9 +30,25 @@ THEN I am again presented with current and future conditions for that city
 
 <img width="1342" alt="Screenshot 2023-02-08 at 10 16 33 PM" src="https://user-images.githubusercontent.com/108949883/217733374-8a0c38fb-c84f-4a56-ac5d-2dd08a91db20.png">
 
+## Instruction
+
+To download app, run the command: ```git clone https://github.com/fuuko08/Weather-Forecast-App.git```
+
 ## Usage
 
-HTML, CSS, Bootstrap, Github, 
-api.openweathermap.org
+* HTML, 
+* CSS, 
+* Javascript
+* Bootstrap, 
+* Github, 
+* api.openweathermap.org
 
-Checkout my weather dashboard app at this link: https://fuuko08.github.io/CH06-Selina-Weather-Forecast-App/
+## Questions
+
+* Linkedin: https://www.linkedin.com/in/selinatpsu/
+
+* Email: suselina08@gmail.com
+
+* Github: https://www.github.com/fuuko08
+
+* Portfolio: https://fuuko08.github.io/React-Portfolio/
